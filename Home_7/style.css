@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(75, 74, 74);
+    margin: 0;
+}
+
+
+.duv1 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(231, 164, 65);
+    animation: move 5s linear infinite ;
+    bottom: 3vh;
+    border: 10px solid white;
+}
+
+@keyframes move {
+    0%   { transform: translateY(0); }
+        50%  { transform: translateY(-500px); }
+        100% { transform: translateY(0); }
+}
+
+
+
+
+.duv2 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 10px;
+    animation: color1 3s forwards infinite;
+  }
+  
+
+  .wrapper2 {
+    width: 200px;
+    height: 200px;
+    border: 10px solid white;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    
+
+  }
+
+  @keyframes color1 {
+    from {
+      background-color: rgb(118, 44, 44);
+    }
+    50% {
+      background-color: rgb(62, 62, 129);
+    }
+    to {
+      background-color: rgb(24, 64, 34);
+    }
+  }
+
+  
+  
+
+
+  .duv3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(232, 114, 214);
+   
+    
+  }
+
+  .wrapper3 {
+    width: 200px;
+    height: 200px;
+    border: 10px solid white;
+    position: absolute;
+    top: 0;
+    left: 450px;
+    border-radius: 8px;
+
+  }
+
+
+
+  .duv3:active {
+     animation: size 3s;
+  }
+
+
+  @keyframes size {
+    0% {
+      height: 100px;
+      width: 100px;
+    }
+    100% {
+      height: 200px;
+      width: 200px;
+    }
+  }
